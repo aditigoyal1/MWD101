@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Coming Soon Page.</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bulma.css">
+	<style>
+        .bg-cover {
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ),
+                        url(img/bg_cover.jpg)
+                        no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .input.is-ghost {
+            background: transparent;
+            border: solid 1px #ffffff;
+            color: #ffffff;
+        }
+
+        .input.is-ghost::placeholder {
+            color: #888888;
+        }
+
+        .button.is-ease {
+            color: #eeeeee;
+            border-color: #eeeeee;
+            transition: color 0.35s ease, border-color 0.35s ease;
+        }
+
+        .button.is-ease:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        .hero .subtitle {
+            padding: 1.5rem;
+        }
+
+        .footer{
+        	background: $primary
+        }
+        .navbar{
+        	
+        }
+    </style>
+</head>
+<body>
+	<nav class="navbar" role="navigation" aria-label="main navigation" >
+		<div class="container">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="#">
+      <img src="img/logo.png"  width="112" height="28">
+    </a>
+				<div class="navbar-burger burger" data-target="navMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+			</div>
+			
+		 </div>
+
+		 <div class="navbar-menu" id="navMenu">
+		 	<div class="navbar-start">
+		 		<div class="navbar-item has-dropdown is-hoverable">
+		 			<a href="#"" class=" navbar-link is-active">Features</a>
+		 				<div class="navbar-dropdown">
+		 					<a href="#"" class=" navbar-item is-active">Responsive Design</a>
+		 					<a href="#"" class=" navbar-item is-active">Fast loading</a>
+		 					<a href="#"" class=" navbar-item is-active">Easy Navigation</a>
+		 					<a href="#"" class=" navbar-item is-active">Other Cool Stuffs</a>	
+		 				</div>
+		 		</div>
+		 	</div>
+
+		 	<div class="navbar-end">
+		 		<a href='#' class="navbar-item">HOME</a>
+		 		<a href='#' class="navbar-item">CONTACT US</a>
+		 	</div>
+		 </div>		
+
+	</nav>
+	<section class="hero is-info is-fullheight bg-cover">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-6 is-offset-3">
+                   <h1 class="title ">
+                       Something Awesome Is In The Work!!
+                	</h1>
+                	<h2 class="subtitle">
+                    	Sign up to be the first to know when we launch.
+                	</h2>
+                	<div class="">
+
+                    	<div class="field is-grouped">
+                        	<p class="control is-expanded">
+                            	<input class="input is-rounded is-ghost has-text-centered" type="text" placeholder="Enter your email">
+                       		 </p>
+                   		</div>
+
+                    	<div class="field is-grouped is-grouped-centered">
+                       		<p class="control">
+                            	<a class="button is-white is-outlined is-rounded is-grouped-centered is-ease is-uppercase has-text-weight-bold">
+                                Sign Up
+                            	</a>
+                        	</p>
+                    	</div>
+                	</div>
+           	 	</div>
+       		</div>
+    	</div>
+ 	</section>
+	<footer class="footer ">
+        <div class="container is-primary">
+        	<div class="content has-text-centered has-text-weight-bold">
+            <p>In the mean time contact with us with the information below.</br></p>
+            <a href="#">rehan@gmail.com</a> | call us at +917976737404
+        
+
+       
+                        
+                                
+            </div>
+        </div>
+    </footer>
+ 	<script type="text/javascript">
+ 		document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+ 	</script>
+</body>
+</html>

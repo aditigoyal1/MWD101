@@ -1,0 +1,31 @@
+.bg-cover {
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ),
+                        url(img/bg_cover.jpg)
+                        no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .input.is-ghost {
+            background: transparent;
+            border: solid 1px #ffffff;
+            color: #ffffff;
+        }
+
+        .input.is-ghost::placeholder {
+            color: #888888;
+        }
+
+        .button.is-ease {
+            color: #eeeeee;
+            border-color: #eeeeee;
+            transition: color 0.35s ease, border-color 0.35s ease;
+        }
+
+        .button.is-ease:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        .hero .subtitle {
+            padding: 1.5rem;
+        }
